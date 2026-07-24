@@ -29,7 +29,8 @@
 }
 
 .gallery-image img,
-.gallery-image video {
+.gallery-image video,
+.gallery-image iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -76,7 +77,15 @@
 
 <!-- GALLERY --> <section id="gallery"> <div class="eyebrow sans"> Upptäck vår plats </div> <h2> En plats att sakta ner </h2> <p class="lead"> Fastigheten är en lugn, grön oas belägen på sluttningen ovanför Coín, omgiven av natur och med fantastisk utsikt över det andalusiska landskapet. Här går livet i ett lugnare tempo. Atmosfären är tyst och privat, med grönska runt omkring och vidsträckta vyer över landskapet. Allteftersom vi utvecklar fastigheten planterar vi fler träd, odlar våra egna grönsaker och skapar ett mer hållbart och ekologiskt sätt att leva. Detta galleri ger en glimt av platsen, naturen runt omkring och de små detaljer som gör vår del av Andalusien så speciell. </p> <div class="gallery"> <div class="placeholder gallery-image"> <img src="Casa 2.png" alt="Casa Naranja" onclick="openImage(this.src)" > </div> <div class="placeholder gallery-image"> <img src="Garden.png" alt="Trädgård" onclick="openImage(this.src)" > </div> <div class="placeholder gallery-image"> <img src="Roof view.png" alt="Utsikt från taket" onclick="openImage(this.src)" > </div> <div class="placeholder gallery-image"> <img src="Pool.png" alt="Pool" onclick="openImage(this.src)" > </div> <div class="placeholder gallery-image"> <img src="View.png" alt="Utsikt" onclick="openImage(this.src)" > </div> <div class="placeholder gallery-image"> <img src="Apartment.png" alt="Lägenhet" onclick="openImage(this.src)" > </div> 
 
-<!-- VIDEO --> <div class="placeholder gallery-image"> <video controls playsinline preload="metadata" > <source src="property-video.mp4" type="video/mp4" > Din webbläsare stöder inte videouppspelning. </video> </div> </div> </section> 
+<!-- VIDEO --> <div class="placeholder gallery-image">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/BqbD6J9BeCM?rel=0"
+    title="Video om vår plats i Andalusien"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div> </div> </section> 
 
 <!-- PRODUCE --> <div class="band" id="produce"> <div class="inner"> <div class="produce"> <div> <div class="eyebrow sans"> Att växa med naturen </div> <h2> Från vår gård till ditt bord 
 
